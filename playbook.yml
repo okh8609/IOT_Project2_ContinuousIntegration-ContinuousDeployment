@@ -18,11 +18,6 @@
         state: directory
         mode: 0777
 
-    - name: Remove file (delete file)
-      file:
-        path: /tmp/rpi/*
-        state: absent
-    
     - copy:
         src: "{{file_path}}"
         dest: /tmp/rpi/
