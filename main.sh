@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# curl https://khaos.tw/hosts > ip.txt
+
 echo "[server]" > inventory
 
 while IFS=" " read -r host _ port 

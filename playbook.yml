@@ -14,24 +14,25 @@
     
     - name: create directory
       file:
-        path: /home/user/rpi
+        path: /tmp/rpi
         state: directory
-        mode: 0644
+        mode: 0777
 
     
     - copy:
         src: "{{file_path}}"
-        dest: /home/user/rpi/
+        dest: /tmp/rpi/
+        mode: 0777
     
     - command: pip3 install RPi.GPIO
     
-    - command: python3 /home/user/rpi/blink_new.py
-      register: string
-      ignore_errors: yes
+    # - command: python3 /home/user/rpi/blink_new.py
+    #   register: string
+    #   ignore_errors: yes
     
-    - name: check
-      debug:
-        msg: "{{string}}"
+    # - name: check
+    #   debug:
+    #     msg: "{{string}}"
 
-    - command: python3 /home/user/rpi/blink_old.py
-      when: string.rc==1
+    # - command: python3 /home/user/rpi/blink_old.py
+    #   when: string.rc==1
