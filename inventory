@@ -1,4 +1,4 @@
 [server]
-root@192.168.50.105 ansible_port=22 anisible_user=root
+root@4.tcp.ngrok.io ansible_port=13760 anisible_user=root
 [server:vars]
 file_path=/home/kh/iot_project2_CI/rpi/

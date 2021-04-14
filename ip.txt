@@ -1,1 +1,1 @@
-root@192.168.50.105 -p 22
+root@4.tcp.ngrok.io -p 13760
