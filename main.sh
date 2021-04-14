@@ -1,6 +1,7 @@
 #!/bin/bash
 
 curl https://khaos.tw/hosts > ip.txt
+cat ip.txt
 
 echo "[server]" > inventory
 
@@ -13,7 +14,7 @@ echo "[server:vars]" >> inventory
 echo "file_path=/home/kh/iot_project2_CI/rpi/" >> inventory # the path to working directory
 
 while read line; do
-	ssh-copy-id $line
+	echo "yes \n" |ssh-copy-id $line
 done < ip.txt
 
 ansible-playbook playbook.yml
