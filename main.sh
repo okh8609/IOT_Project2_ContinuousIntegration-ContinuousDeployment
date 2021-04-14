@@ -17,4 +17,4 @@ while read line; do
 	ssh-copy-id $line
 done < ip.txt
 
-ansible-playbook playbook.yml
+ansible-playbook -i inventory  playbook.yml
