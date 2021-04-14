@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# curl https://khaos.tw/hosts > ip.txt
+curl https://khaos.tw/hosts > ip.txt
 
 echo "[server]" > inventory
 
