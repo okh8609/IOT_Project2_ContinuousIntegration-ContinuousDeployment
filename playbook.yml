@@ -3,6 +3,9 @@
   become: yes
   tasks:
     
+    - name: Refresh inventory to ensure new instances exist in inventory
+      meta: refresh_inventory
+
     - name: test connection
       ping:
       register: message
