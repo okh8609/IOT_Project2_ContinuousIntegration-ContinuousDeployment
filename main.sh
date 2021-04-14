@@ -13,7 +13,7 @@ echo "[server:vars]" >> inventory
 echo "file_path=/home/kh/iot_project2_CI/rpi/" >> inventory # the path to working directory
 
 while read line; do
-	ssh-copy-id -i /home/kh/.ssh/id_rsa.pub $line
+	ssh-copy-id $line
 done < ip.txt
 
 ansible-playbook playbook.yml
