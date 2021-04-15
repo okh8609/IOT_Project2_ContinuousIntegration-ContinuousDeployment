@@ -2,13 +2,13 @@
 import RPi.GPIO as GPIO
 import time
 
-def setup():
+def setup()
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(11,GPIO.OUT)
     print("OK")
 
-def blink():
-    while True:
+def blink()
+    while True
         # GPIO.output(11,GPIO.HIGH)
         # time.sleep(1.5)
         # GPIO.output(11,GPIO.LOW)
