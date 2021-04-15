@@ -9,14 +9,14 @@ def setup():
 
 def blink():
     while True:
-        # GPIO.output(11,GPIO.HIGH)
-        # time.sleep(1.5)
-        # GPIO.output(11,GPIO.LOW)
-        # time.sleep(1.5)
         GPIO.output(11,GPIO.HIGH)
-        time.sleep(0.08)
+        time.sleep(1.5)
         GPIO.output(11,GPIO.LOW)
-        time.sleep(0.08)
+        time.sleep(1.5)
+        # GPIO.output(11,GPIO.HIGH)
+        # time.sleep(0.08)
+        # GPIO.output(11,GPIO.LOW)
+        # time.sleep(0.08)
 
 if __name__=="__main__":
     setup()
