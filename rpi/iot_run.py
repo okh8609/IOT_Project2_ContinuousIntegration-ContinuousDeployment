@@ -7,8 +7,8 @@ def setup():
     GPIO.setup(11,GPIO.OUT)
     print("OK")
 
-def blink():
-    while True:
+def blin
+    while Tru
         GPIO.output(11,GPIO.HIGH)
         time.sleep(1.5)
         GPIO.output(11,GPIO.LOW)
