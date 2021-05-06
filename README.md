@@ -4,6 +4,8 @@
 本專案使用 Jenkins 他配 ansible 來佈署程式到 Raspberry Pi  
 系統架構圖如下圖所示：  
 ![](https://i.imgur.com/J1PDc0H.png)
+![](https://i.imgur.com/et74sK5.png)  
+
 
 
 Jenkins會接收到Github的webhook的呼叫  
